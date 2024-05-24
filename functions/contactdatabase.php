@@ -24,3 +24,12 @@ function create_contact($first_name ,$phone_number,$created_at){
     }
    
 }
+
+function delete($contact_id){
+    $sql = $sql = "DELETE FROM contacts WHERE contact_id = $contact_id";
+
+    $result = query($sql);
+    // Kiểm tra kết quả
+   
+   
+}

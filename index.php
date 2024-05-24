@@ -36,6 +36,8 @@ $contacs = contact();
                             <td><?php echo $item["last_name "] ?></td>
                             <td><?php echo $item["phone_number"] ?></td>
                             <td><?php echo $item["created_at"] ?></td>
+
+                            <td>   <a href="" class="btn btn-primary">Add to cart</a></td>
                     </tr>
                 <?php endforeach;?>   
                 </tbody>
