@@ -33,11 +33,11 @@ $contacs = contact();
                 <?php foreach($contacs as $item):?>
                     <tr>
                             <th scope="row"><?php echo $item["contact_id "] ?></th>
-                            <td><?php echo $item["last_name "] ?></td>
+                            <td><?php echo $item["last_name"] ?></td>
                             <td><?php echo $item["phone_number"] ?></td>
                             <td><?php echo $item["created_at"] ?></td>
 
-                            <td>   <a href="" class="btn btn-primary">Add to cart</a></td>
+                            <td>   <a href="/delete.php?id=<?php echo $item["contact_id "] ?> " class="btn btn-primary">delete</a></td>
                     </tr>
                 <?php endforeach;?>   
                 </tbody>
